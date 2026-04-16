@@ -1,0 +1,16 @@
+id                  BIGINT          PRIMARY KEY
+marca               VARCHAR(25)     NOT NULL
+modello             VARCHAR(25)     NOT NULL
+anno                YEAR            NOT NULL
+prezzo              DECIMAL(10,2)   NOT NULL
+chilometraggio      INT             NOT NULL
+carburante          VARCHAR(25)
+cambio              VARCHAR(25)
+colore              VARCHAR(25)
+numero_porte        TINYINT
+cilindrata          INT  
+potenza_cv          SMALLINT
+emissioni_co2       SMALLINT
+classe_euro         VARCHAR(15)
+immatricolazione    DATE
+descrizione         TEXT
