@@ -1,16 +1,16 @@
-id                  BIGINT          PRIMARY KEY (UNIQUE, NOT NULL)
-marca               VARCHAR(25)     NOT NULL
-modello             VARCHAR(25)     NOT NULL
-anno                YEAR            NOT NULL
-prezzo              DECIMAL(10,2)   NOT NULL
-chilometraggio      INT             NOT NULL
-carburante          VARCHAR(25)
-cambio              VARCHAR(25)
-colore              VARCHAR(25)
-numero_porte        TINYINT
-cilindrata          INT  
+id                  BIGINT PRIMARY KEY  AUTO_INCREMENT
+marca               VARCHAR(25)         NOT NULL
+modello             VARCHAR(25)         NOT NULL
+anno                SMALLINT            NOT NULL
+prezzo              DECIMAL(10,2)       NOT NULL
+chilometraggio      INT NOT NULL
+carburante          VARCHAR(20)
+cambio              VARCHAR(20)
+colore              VARCHAR(30)
+numero_porte        TINYINT             DEFAULT 5
+cilindrata          INT
 potenza_cv          SMALLINT
 emissioni_co2       SMALLINT
-classe_euro         VARCHAR(15)
+classe_euro         VARCHAR(10)
 immatricolazione    DATE
 descrizione         TEXT
