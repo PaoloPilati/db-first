@@ -1,4 +1,4 @@
-id                  BIGINT          PRIMARY KEY
+id                  BIGINT          PRIMARY KEY (UNIQUE, NOT NULL)
 marca               VARCHAR(25)     NOT NULL
 modello             VARCHAR(25)     NOT NULL
 anno                YEAR            NOT NULL
